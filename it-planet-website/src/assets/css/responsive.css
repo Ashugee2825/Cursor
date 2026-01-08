@@ -1,0 +1,117 @@
+/* ===== Responsive Styles ===== */
+@media (max-width: 1199px) {
+    .hero-content h1 {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .section-padding {
+      padding: 80px 0;
+    }
+    
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .menu-list {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      flex-direction: column;
+      padding: 20px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    
+    .menu-list.open {
+      display: flex;
+    }
+    
+    .menu-toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 24px;
+      width: 30px;
+      cursor: pointer;
+    }
+    
+    .menu-toggle span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background: #333;
+      border-radius: 10px;
+    }
+    
+    .header-btn {
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .section-padding {
+      padding: 60px 0;
+    }
+    
+    .section-title h2 {
+      font-size: 2rem;
+    }
+    
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+    
+    .hero-content p {
+      font-size: 1rem;
+    }
+    
+    .client-logos {
+      gap: 20px;
+    }
+    
+    .client-logo {
+      max-width: 120px;
+    }
+    
+    .sideWidget {
+      bottom: 80px;
+      right: 15px;
+    }
+    
+    .sideWidget a {
+      width: 40px;
+      height: 40px;
+      font-size: 1rem;
+    }
+    
+    .whatsapp-button {
+      bottom: 20px;
+      right: 20px;
+    }
+    
+    .whatsapp-button a {
+      width: 50px;
+      height: 50px;
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .hero-content h1 {
+      font-size: 1.8rem;
+    }
+    
+    .section-title h2 {
+      font-size: 1.8rem;
+    }
+    
+    .client-logo {
+      max-width: 100px;
+    }
+  }
+
+  
