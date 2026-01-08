@@ -1,0 +1,305 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css');
+
+/* Add all the CSS from the original website here */
+/* This would be a very long CSS file, so I'll include just a few essential styles */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.header-area {
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.company-logo img {
+  height: 40px;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-list li {
+  position: relative;
+  margin: 0 15px;
+}
+
+.menu-list li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 0;
+  display: block;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  min-width: 220px;
+  display: none;
+  list-style: none;
+  padding: 10px 0;
+  z-index: 999;
+}
+
+.menu-item-has-children:hover .sub-menu {
+  display: block;
+}
+
+.primary-btn5 {
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Add more styles as needed for other components */
+
+/* Add these styles to your existing index.css */
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.marquee_text {
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: #f8f9fa;
+  padding: 15px 0;
+}
+
+.marquee_text h6 {
+  display: inline-block;
+  padding: 0 20px;
+  animation: marquee 30s linear infinite;
+}
+
+/* Service Cards */
+.it-planet-website-development-services {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.it-planet-website-development-services:hover {
+  transform: translateY(-10px);
+}
+
+.it-planet-website-development-services .card-body {
+  padding: 25px;
+}
+
+.it-planet-website-development-services img {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.it-planet-website-development-services h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #2563eb;
+}
+
+.it-planet-website-development-services p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Testimonials */
+.testimonialSection {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  color: white;
+  padding: 80px 0;
+}
+
+.testimHolder {
+  padding: 15px;
+}
+
+.testimBox {
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 30px;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.testimContent p {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.rating {
+  color: #fbbf24;
+  margin-bottom: 15px;
+}
+
+.author-name-desig h6 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+/* Contact Cards */
+.contact-area {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  height: 100%;
+}
+
+.contact-area .card-body {
+  padding: 25px;
+}
+
+.contact-area iframe {
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Service Links Grid */
+.blogs-links {
+  background: #f8f9fa;
+}
+
+.blogs-links .box {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.blogs-links .box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.blogs-links .box h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #2563eb;
+}
+
+/* Side Widget */
+.sideWidget {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  z-index: 1000;
+}
+
+.sideWidget a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.sideWidget a.one {
+  background: #3b5998; /* Facebook blue */
+}
+
+.sideWidget a.two {
+  background: #e1306c; /* Instagram pink */
+}
+
+.sideWidget a:hover {
+  transform: scale(1.1);
+}
+
+/* WhatsApp Button */
+#whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+
+#whatsapp a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25D366;
+  color: white;
+  font-size: 1.8rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+#whatsapp a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .blogs-links .box {
+    padding: 15px;
+  }
+  
+  .blogs-links .box h2 {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sideWidget {
+    bottom: 80px;
+    right: 15px;
+  }
+  
+  .sideWidget a {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  
+  #whatsapp {
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  #whatsapp a {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
